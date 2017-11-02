@@ -1,64 +1,80 @@
 
 /* Jumbotron */
 .jumbotron{
-    height: 200px !important;
+    height: 150px !important;
     text-align: center;
-    padding-top: 25px !important;
+    padding-top: 1px !important;
 }
-/* Question Button Lists */
-/* holder of questions */
+/* wrapper */
+.container{
+    background-image: url(../images/background.jpg);
+    width: 100%;
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    background-color: black;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+/*Questions*/
+
 .answerButtons{
-    margin-top: 15px;
+    margin-top: 45px!important;
+    vertical-align: center;
+    line height: 500px;
+    text-align: center;
 }
 #question1{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question2{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question3{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question4{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question5{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question6{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question7{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question8{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question9{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 #question10{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 /* Actual buttons */
 .q1 {
@@ -115,13 +131,16 @@
 
 /* Show Answer and Next*/
 h2{
-    visibility: hidden;
+    vertical-align: middle;
+    visibility: visible;
     text-align: center;
+    text-shadow: 1px 1px rgb(128, 121, 121);
+    margin-bottom: 0px;
     
     
 }
 
-.next{
+#next{
    visibility: hidden; 
    width: 100% !important; 
    z-index: 12;
@@ -131,5 +150,21 @@ h2{
 
 .start{
     visibility: visible;
-    margin-top: 15px;
+   margin-top: 0px !important;
+   margin-bottom: 10px;
+   z-index: 15;
+   position: relative;
+}
+
+#timer{
+    visibility: visible;
+    background-color: rgb(0, 183, 255);
+    width: 10%;
+    margin: 0 auto;
+    border: black 1px solid;
+    font-weight: bolder;
+}
+
+#quizImage{
+    margin-top: 45px;
 }
