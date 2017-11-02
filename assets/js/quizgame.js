@@ -95,9 +95,7 @@ $(document).ready(function () {
     var intervalId;
     
         
-    
-        //  When the resume button gets clicked, execute the run function.
-        
+    // Timer
     
         function run() {
           intervalId = setInterval(decrement, 1000);
@@ -126,16 +124,11 @@ $(document).ready(function () {
           }
         }
     
-        //  The stop function
         function stop() {
-    
-          //  Clears our intervalId
-          //  We just pass the name of the interval
-          //  to the clearInterval function.
           clearInterval(intervalId);
           number = 10;
         }
-
+// Load image and buttons start timer
     function loadQuestion(x) {
         $(".q" + [x]).css("visibility", "visible");
         var val = questions[x - 1].value;
@@ -143,7 +136,7 @@ $(document).ready(function () {
         $("#next").css("visibility", "hidden");
         run();
     };
-
+// Show correct answer  if person is right
     function showAnswerCorrect(x) {
         $("h2").text("Yes, the answer is " + questions[x - 1].answer + "!");
         $("h2").css("visibility", "visible");
@@ -152,7 +145,7 @@ $(document).ready(function () {
         correctAnswerCount++;
 
     };
-
+// Show correct answer if person is wrong
     function showAnswerWrong(x) {
         $("h2").text("No, the answer is " + questions[x - 1].answer + "!");
         $("h2").css("visibility", "visible");
@@ -163,11 +156,12 @@ $(document).ready(function () {
     };
 
 
-
+// Final screen with score
     function endpage() {
         $("#quizImage").attr("src", "https://s-media-cache-ak0.pinimg.com/originals/16/79/d5/1679d54578da83b15cc67aa6a5e086b0.gif");
         $("h2").html("Well, look at that!"+ "<br><br>"+"Correct: "+ correctAnswerCount + "<br>" + "Incorrect: " + wrongAnswerCount);
         $("h2").css("visibility", "visible");
+        $("#timer").css("visibility", "hidden");
     };
 
 
