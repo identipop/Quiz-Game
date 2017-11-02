@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src= "https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    
+
+        <title>Meme Master</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Meme Master</h1>
+            <p>Do you know the names of these popular memes?</p>
+        </div>
+        <div class="wrapper">
+            <div class = "row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5"><img src="https://media1.tenor.com/images/96f04d3240b88ab1d22592d2c7ca1e8f/tenor.gif?itemid=9007320" class="img-responsive center-block" alt="Quiz Image" id="quizImage"></div>
+                 <div class="col-sm-5">
+                       
+                        <div class="list-group answerButtons center-block" id="answerbuttons">
+                                <!-- Question 1 - Caveman Spongebob (3)-->
+                                <div id="question1">
+                                <button type="button" class="list-group-item choiceA q1" value=1>Angry Spongebob</button>
+                                <button type="button" class="list-group-item choiceB q1" value=2>Loincloth Spongebob</button>
+                                <button type="button" class="list-group-item choiceC q1" value=3>Caveman Spongebob</button>
+                                <button type="button" class="list-group-item choiceD q1" value=4>Yelling Patrick</button>
+                                 </div>
+                                <!-- Question 2 Trash Dove (1)-->
+                                <div id="question2">
+                                <button type="button" class="list-group-item choiceA q2" value=1>Trash Dove</button>
+                                <button type="button" class="list-group-item choiceB q2" value=2>Thrash Pigeon</button>
+                                <button type="button" class="list-group-item choiceC q2" value=3>Bird Necking</button>
+                                <button type="button" class="list-group-item choiceD q2" value=4>Rock Pigeon</button>
+                                </div>
+                                <!-- Question 3 - Forever Alone (2)-->
+                                <div id="question3">
+                                <button type="button" class="list-group-item choiceA q3" value=1>Crying Moon</button>
+                                <button type="button" class="list-group-item choiceB q3" value=2>Forever Alone</button>
+                                <button type="button" class="list-group-item choiceC q3" value=3>Crying Lonely Man</button>
+                                <button type="button" class="list-group-item choiceD q3" value=4>Pie Face Cry</button>
+                                </div>
+                                <!-- Question 4 - Ancient Aiens (2)-->
+                                <div id="question4">
+                                <button type="button" class="list-group-item choiceA q4" value=1>Whoa Dude</button>
+                                <button type="button" class="list-group-item choiceB q4" value=2>Ancient Aliens</button>
+                                <button type="button" class="list-group-item choiceC q4" value=3>Conspiracy Guy</button>
+                                <button type="button" class="list-group-item choiceD q4" value=4>Mad Scientist</button>
+                                </div>
+                                <!-- Question 5 Doge (1)-->
+                                <div id="question5">
+                                <button type="button" class="list-group-item choiceA q5" value=1>Doge</button>
+                                <button type="button" class="list-group-item choiceB q5" value=2>Shibs</button>
+                                <button type="button" class="list-group-item choiceC q5" value=3>Doggo</button>
+                                <button type="button" class="list-group-item choiceD q5" value=4>Pupper</button>
+                                </div>
+                                <!-- Question 6 Dat Boi (3)-->
+                                <div id="question6">
+                                <button type="button" class="list-group-item choiceA q6" value=1>Kermit Unicycle</button>
+                                <button type="button" class="list-group-item choiceB q6" value=2>Frog Cycle</button>
+                                <button type="button" class="list-group-item choiceC q6" value=3>Dat Boi</button>
+                                <button type="button" class="list-group-item choiceD q6" value=4>Frog Wheel</button>
+                                 </div>
+                                <!-- Question 7 Grumpy Cat (4)-->
+                                <div id="question7">
+                                <button type="button" class="list-group-item choiceA q7" value=1>Nyan Cat</button>
+                                <button type="button" class="list-group-item choiceB q7" value=2>Nope Cat</button>
+                                <button type="button" class="list-group-item choiceC q7" value=3>Angry Cat</button>
+                                <button type="button" class="list-group-item choiceD q7" value=4>Grumpy Cat</button>
+                                </div>
+                                <!-- Question 8 Nyan Cat (1)-->
+                                <div id="question8">
+                                <button type="button" class="list-group-item choiceA q8" value=1>Nyan Cat</button>
+                                <button type="button" class="list-group-item choiceB q8" value=2>Rainbow Space Kitty Comet</button>
+                                <button type="button" class="list-group-item choiceC q8" value=3>Pop Tart Cat</button>
+                                <button type="button" class="list-group-item choiceD q8" value=4>Happy Cat</button>
+                                </div>
+                                <!-- Question 9 Overly Attached Girlfriend-->
+                                <div id="question9">
+                                <button type="button" class="list-group-item choiceA q9" value=1>Crazy Eyes Girl</button>
+                                <button type="button" class="list-group-item choiceB q9" value=2>Psycho Chick</button>
+                                <button type="button" class="list-group-item choiceC q9" value=3>Overly Attached Girlfriend</button>
+                                <button type="button" class="list-group-item choiceD q9" value=4>Stage 5 Clinger</button>
+                                </div>
+                                <!-- Question 10 Peanut Butter Jelly Time -->
+                                <div id="question10">
+                                <button type="button" class="list-group-item choiceA q10" value=1>Nana Dance</button>
+                                <button type="button" class="list-group-item choiceB q10" value=2>Raise The Roof Banana</button>
+                                <button type="button" class="list-group-item choiceC q10" value=3>Peel Dance</button>
+                                <button type="button" class="list-group-item choiceD q10" value=4>Peanut Butter Jelly Time</button>
+                                </div>
+                            </div>  
+                            <h2 id=answer></h2> 
+                            
+                        
+                    </div>
+                    <div class="col-sm-1"> </div>
+                    </div>
+                    <div class= "row">
+                            <div class="col-sm-4"> </div>
+                            <div class="col-sm-4"> 
+                            <button type="button" class="btn-success btn-block next">Next</button>
+                            <button type="button" class="btn-danger btn-block start">Start</button>
+                            </div>
+                            <div class="col-sm-4"> </div>
+                    </div>
+                    </div>
+                        
+                         
+            </div>
+                
+            </div>
+       
+        </div>
+    </div>
+    
+    <script src= "assets/js/quizgame.js"></script>
+</body>
+
+</html>

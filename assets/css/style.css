@@ -1,0 +1,135 @@
+
+/* Jumbotron */
+.jumbotron{
+    height: 200px !important;
+    text-align: center;
+    padding-top: 25px !important;
+}
+/* Question Button Lists */
+/* holder of questions */
+.answerButtons{
+    margin-top: 15px;
+}
+#question1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question8{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#question10{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* Actual buttons */
+.q1 {
+    visibility: hidden;
+    z-index: 1;
+  
+}
+
+.q2{
+    visibility: hidden;
+    z-index: 2;
+}
+.q3{
+    visibility: hidden;
+    z-index: 3;
+}
+
+.q4{
+    visibility: hidden;
+    z-index: 4;
+    
+}
+
+.q5{
+    visibility: hidden;
+    z-index: 5;
+}
+
+.q6{
+    visibility: hidden;
+    z-index: 6;
+}
+
+.q7{
+    visibility: hidden;
+    z-index: 7;
+}
+
+.q8{
+    visibility: hidden;
+    z-index: 8;
+}
+
+.q9{
+    visibility: hidden;
+    z-index: 9;
+}
+
+.q10{
+    visibility: hidden;
+    z-index: 10;
+
+}
+
+/* Show Answer and Next*/
+h2{
+    visibility: hidden;
+    text-align: center;
+    
+    
+}
+
+.next{
+   visibility: hidden; 
+   width: 100% !important; 
+   z-index: 12;
+   margin-top: 15px;
+  
+}
+
+.start{
+    visibility: visible;
+    margin-top: 15px;
+}
