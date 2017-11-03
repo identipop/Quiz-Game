@@ -99,7 +99,7 @@ $(document).ready(function () {
     
         function run() {
           intervalId = setInterval(decrement, 1000);
-        }
+        };
     
         //  The decrement function.
         function decrement() {
@@ -122,12 +122,12 @@ $(document).ready(function () {
             number = 10;
     
           }
-        }
+        };
     
         function stop() {
           clearInterval(intervalId);
           number = 10;
-        }
+        };
 // Load image and buttons start timer
     function loadQuestion(x) {
         $(".q" + [x]).css("visibility", "visible");
@@ -162,10 +162,17 @@ $(document).ready(function () {
         $("h2").html("Well, look at that!"+ "<br><br>"+"Correct: "+ correctAnswerCount + "<br>" + "Incorrect: " + wrongAnswerCount);
         $("h2").css("visibility", "visible");
         $("#timer").css("visibility", "hidden");
+        $("#finish").css("visibility", "hidden");
+        $(".start").css("visibility", "visible");
+        wrongAnswerCount = 0;
+        correctAnswerCount = 0;
     };
 
-
-    $(".q1").click(function () {
+// On click for each set of question buttons-- compares values, stops timer, runs right/wrong funcs, and adds to sequence
+  // On click for start button
+  
+   
+$(".q1").click(function () {
         stop();
         if ($(this).val() == questions[0].value) {
             showAnswerCorrect(1);
@@ -256,11 +263,11 @@ $(document).ready(function () {
         }
         sequence++;
         $("#next").text("Finish");
-        $("#next").attr("id", "finish");
+        
 
     });
 
-
+// On click for next button
 
     $("#next").click(function () {
         stop();
@@ -268,18 +275,21 @@ $(document).ready(function () {
             loadQuestion(sequence);
         } else {
             endpage();
+            $(this).css("visibility", "hidden");
+            $(this).text("Next");
+            
         }
 
     });
-
     $(".start").click(function () {
-        loadQuestion(1);
-        $(this).css("visibility", "hidden");
-        $("h2").css("visibility", "hidden");
+        if (sequence <= 2) {
+            loadQuestion(1);
+            $(this).css("visibility", "hidden");
+            $("h2").css("visibility", "hidden");
+        } else {
+            window.location.reload();
+        }
+        
+    
     });
-
-   
-
-   
-
 });
