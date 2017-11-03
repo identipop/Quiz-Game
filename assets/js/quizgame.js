@@ -282,14 +282,12 @@ $(".q1").click(function () {
 
     });
     $(".start").click(function () {
-        if (sequence <= 2) {
+            sequence = 1;
             loadQuestion(1);
             $(this).css("visibility", "hidden");
             $("h2").css("visibility", "hidden");
-        } else {
-           location.reload();
-        }
+        });
         
     
-    });
+
 });
