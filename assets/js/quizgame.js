@@ -287,7 +287,7 @@ $(".q1").click(function () {
             $(this).css("visibility", "hidden");
             $("h2").css("visibility", "hidden");
         } else {
-            window.location.reload();
+           location.reload();
         }
         
     
